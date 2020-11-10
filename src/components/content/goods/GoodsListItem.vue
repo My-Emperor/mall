@@ -1,6 +1,6 @@
 <template>
   <div class="goods-item">
-    <a :href="good.link"><img :src="good.show.img" alt="img"></a>
+    <a :href="good.link"><img :src="good.show.img" alt="img" @load="imageLoad"></a>
     <div class="goods-info">
       <p>{{good.title}}</p>
       <span class="price">{{good.price}}</span>
@@ -14,10 +14,16 @@
     name: "GoodsListItem",
     props: {
       good: {
-        type: Array,
+        type: Object,
         default() {
           return []
         }
+      }
+    },
+    methods:{
+      imageLoad(){
+        //发送图片加载完成事件
+        this.$bus.$emit('ItemImageLoad')
       }
     }
   }
