@@ -6,8 +6,8 @@
 npm install
 ```
 #项目预览(由于项目本身面向手机端开发,pc端需要使用开发者模式进行手机端模拟预览)
-carmen-zhy/job/raw/master/image/*.png
-![Image text](https://github.com/My-Emperor/mall/raw/master/assets/img/readme/detail.jpg)
+
+![Image text](https://github.com/My-Emperor/mall/raw/master/img/readme/detail.jpg)
 ![Image text](src/assets/img/readme/detail.jpg)
 
 ##项目整体基于Vue,Vue-Router,Vuex进行开发, plugin:Batter-Scroll
