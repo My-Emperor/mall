@@ -39,7 +39,7 @@
   import {getHomeMultidata} from "network/home";
   import {getHomeGoods} from "network/home";
   import {debounce} from "common/utils";
-  import scroll from "better-scroll";
+
 
 
   export default {
@@ -92,9 +92,9 @@
       })
     },
     //当离开首页时保存浏览记录
-    destroyed() {
-      console.log('des')
-    },
+    // destroyed() {
+      // console.log('des')
+    // },
     //活跃时 回到首页时触发
     activated() {
       this.$refs.scrollRef.getRefresh();
@@ -132,7 +132,7 @@
 
         //2
         this.isShowTabControl = (-position.y) > this.tabControlScrollY;
-        console.log(this.isShowTabControl)
+        // console.log(this.isShowTabControl)
       },
       //上啦加载更多
       loadMore() {

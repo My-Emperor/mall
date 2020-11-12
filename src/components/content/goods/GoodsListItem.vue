@@ -1,6 +1,6 @@
 <template>
-  <div class="goods-item">
-    <a :href="good.link"><img :src="good.show.img" alt="img" @load="imageLoad"></a>
+  <div class="goods-item" @click="itemClick">
+   <img :src="good.show.img" alt="img" @load="imageLoad">
     <div class="goods-info">
       <p>{{good.title}}</p>
       <span class="price">{{good.price}}</span>
@@ -24,11 +24,13 @@
       imageLoad(){
         //发送图片加载完成事件
         this.$bus.$emit('ItemImageLoad')
+      },
+      itemClick(){
+        this.$router.push('/detail/'+this.good.iid)
       }
     }
   }
 </script>
-
 <style scoped lang="less">
   .goods-item {
     margin-bottom: 10px;

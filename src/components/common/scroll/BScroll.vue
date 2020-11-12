@@ -42,9 +42,10 @@
       })
 
       this.scroll.on('scroll', (position) => {
-        // console.log(position)
+        console.log(position)
         this.$emit('getScroll', position)
       });
+
     },
     methods: {
       getScrollToTop(x, y, time = 400) {
@@ -55,9 +56,10 @@
       },
       getRefresh() {
         console.log('refresh----')
-        this.scroll &&  this.scroll.refresh();
+        this.scroll && this.scroll.refresh();
       },
-      getScrollY(){
+      getScrollY() {
+        console.log(this.scroll.y)
         return this.scroll && this.scroll.y;
       }
     }
