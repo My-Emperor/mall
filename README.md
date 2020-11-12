@@ -5,7 +5,8 @@
 ```
 npm install
 ```
-# 项目预览(由于项目本身面向手机端开发,pc端需要使用开发者模式进行手机端模拟预览)
+## 项目预览
+## (由于项目本身面向手机端开发,pc端需要使用开发者模式进行手机端模拟预览)
 
 ![Image text](https://raw.githubusercontent.com/My-Emperor/mall/main/src/assets/img/readme/home.jpg)
 ![Image text](https://raw.githubusercontent.com/My-Emperor/mall/main/src/assets/img/readme/detail.jpg)
